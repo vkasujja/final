@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAKABUYE VICTORIA - Final Exam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <style>
+        img{
+            width: 100px;
+            border-radius: 50px;
+            float:left ;
+            margin-right: 10px;
+            background-color: aquamarine;
+        }
+        .username{
+       font-weight: bold;     
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <header>
+        <div class="jumbotron text-center">
+            <h1>NAKABUYE VICTORIA- Final Exam</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="profile-photo" src="eos/p4.jpg" alt="Profile Photo" class="img-thumbnail">
+            </div>
+            <div class="col-md-6">
+                <h2>Personal Details</h2>
+                <ul>
+                    <li>Name: NAKABUYE VICTORIA</li>
+                    <li>Registration Number: 23/BCC/BU/R/0001</li>
+                    <li>Examination Number: 23SEM/BU/Exam1971</li>
+                    <li>Email: victorianakabuye06gmail.com</li>
+                    <li>Phone Contact: 0702056312/0702179177</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Personal Website Links</h2>
+                https://vkasujja.github.io/personal_website/
+            </div>
+            <div class="col-sm-6">
+                <h2>Organisational Website Links</h2>
+                https://vkasujja.github.io/Vickie-Organisational-website-1/
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p>&copy; 2021. Footer, designed by Nakabuye Victoria</p>
+    </footer>
+
+    <script>
+        document.getElementById("profile-photo").addEventListener("click", function() {
+            var imageSrc = this.getAttribute("src");
+
+            if (imageSrc.endsWith("eos/p4.jpg")) {
+                this.setAttribute("src", "images/eos/p4.jpg");
+            } else {
+                this.setAttribute("src", "images/eos/p4.jpg");
+            }
+});
+    </script>
+</body>
+</html>
